@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+.wechat {
+    background: #282828;
+}
+.wechat__case {
+    float: left;
+    width: 16%;
+    margin-left: 3.333%;
+    margin-top: 50px;
+    padding: 10px;
+    background: #fff;
+}
+/*响应式*/
+@media screen and (max-width: 400px){
+    .wechat__case {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 767px){
+    .wechat__case {
+        width: 44%;
+        margin-left: 4%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1026px){
+    .wechat__case {
+        width: 20%;
+        margin-left: 4%;
+    }
+}
+.wechat__container {
+}
+.wechat__case-imgWrap {
+    position: relative;
+}
+/*二维码*/
+.wechat__case-hide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.76);
+    opacity: 0;
+}
+.wechat__case:hover .wechat__case-hide>img {
+    animation: wechat-codeShake 1s;
+    -webkit-animation: wechat-codeShake 1s;
+}
+.wechat__case-hide:hover {
+    opacity: 1;
+}
+.wechat__case-hide>img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 160px;
+    height: 160px;
+    margin-left: -80px;
+    margin-top: -80px;
+}
+.wechat__case-img {
+    width: 100%;
+    height: auto;
+}
+.wechat__case-txt {
+    padding: 10px 0;
+    color: #000;
+}

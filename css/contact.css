@@ -1,0 +1,150 @@
+/*banner s*/
+section.contact__banner {
+    background: url(../imgs/banner/contact_banner.jpg) no-repeat;
+    background-size: cover;
+}
+.contact__banner-txt {
+    position: absolute;
+    bottom: 100px;
+}
+@media screen and (min-width: 535px){
+    .contact__banner-txt {
+        left: 8.3333%
+    }
+}
+/*banner e*/
+
+/*reason s*/
+.contact__reason-txt {
+    font-size: 1.3em;
+    line-height: 300%;
+    text-align: left;
+    color: #484848;
+}
+.contact__reason-txt>a>span {
+    padding: 5px;
+    background: #e2373d;
+    color: #fff;
+}
+/*reason e*/
+
+/*address s*/
+.address {
+    background: #f4f4f4;
+}
+.address>div>h1 {
+    font-size: 1.2em;
+}
+.address>div>h1>span {
+    font-size: 1.8em;
+}
+/*联系方式*/
+.address__ways-list {
+    margin-top: 30px;
+}
+.address__ways-list>li {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.address__ways-chatBox {
+    float: left;
+    width: 240px;
+    background: #dedede;
+    color: #6c6c6c;
+    line-height: 90px;
+    font-size: 1.8em;
+}
+.address__ways-chat {
+    float: left;
+    height: 90px;
+    width: 105px;
+    background: #e2373d url(../imgs/content/phone_icon.png) no-repeat center;
+    cursor: pointer;
+}
+.address__ways-chat {
+    display: inline-block;
+}
+.address__ways-list>li:not(:first-child) {
+    height: 90px;
+    width: 105px;
+}
+.address__ways-list>li:nth-child(2) {
+    background: url(../imgs/content/contact1.png) no-repeat;
+}
+.address__ways-list>li:nth-child(3) {
+    background: url(../imgs/content/contact2.png) no-repeat;
+}
+.address__ways-list>li:nth-child(4) {
+    background: url(../imgs/content/contact3.png) no-repeat;
+}
+.address__places {
+    margin-top: 50px;
+    text-align: left;
+    line-height: 200%;
+    font-size: 1.2em;
+}
+.address__places .h1 {
+    font-size: 1.3em;
+    color: #3d3d3d;
+}
+.address__places a {
+    color: #484848;
+}
+.address__places-phone {
+    font-size: 1.2em;
+    color: #e2373d;
+}
+/*address e*/
+
+/*form s*/
+.form .h1 {
+    color: #484848;
+}
+.form .h4 {
+    padding-bottom: 30px;
+    line-height: 150%;
+    color: #636363;
+}
+.form__fills {
+    margin: 0 auto;
+    width: 70%;
+}
+.form__fills>div {
+    overflow: auto;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form__fills textarea,.form__fills input {
+    color: #ababab;
+    font-size: 14px;
+    padding-left: 20px;
+    background: url(../imgs/content/dot.png) 5px 18px no-repeat;
+    border: 1px solid #ababab;
+}
+.form__fills input {
+    height: 40px;
+}
+.form__fills-row1>input:nth-child(1) {
+    margin-right: 4%;
+}
+.form__fills-row1>input {
+    float: left;
+    width: 48%;
+}
+.form__fills-row2>input {
+    width: 100%;
+}
+.form__fills-row3>textarea {
+    height: 175px;
+    width: 100%;
+    padding-top: 10px;
+}
+.form__fills-row4>a {
+    padding: 10px 40px;
+    background: #e2373d;
+    color: #fff;
+    font-size: 1.6em;
+}
+
+/*form e*/

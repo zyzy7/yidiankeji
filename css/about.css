@@ -1,0 +1,397 @@
+/*video s*/
+.video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.video>#video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+@media screen and (min-width: 1026px) {
+    .video {
+        height: 500px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1025px){
+    .video {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 767px){
+    .video {
+        height: 400px;
+    }
+}
+.video__txt {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+/*video e*/
+
+/*special s*/
+section.special {
+    padding-top: 20px;
+}
+h1.special__title {
+    font-size: 1.3em;
+}
+h1.special__title>span {
+    font-size: 1.5em;
+    color: #e2373d;
+}
+.special__cont {
+    padding-top: 30px;
+}
+/*图片*/
+.special__cont-cpterImg {
+    width: 100%;
+    height: auto;
+}
+.special__cont-cpterImg-act {
+    animation: fadeInLeft 2s 1;
+    -webkit-animation: fadeInLeft 2s 1;
+}
+/*惊喜*/
+.special__cont-txtTitle>span:nth-child(2) {
+    font-size: 1.8em;
+    color: #e2373d;
+}
+.special__cont-txtTitle,.special__cont-txtsbTit {
+    text-align: left;
+}
+.special__cont-txtP-act {
+    animation: fadeInTop 2s 1;
+    -webkit-animation: fadeInTop 2s 1;
+}
+.special__cont-txtP {
+    padding-top: 30px;
+}
+.special__cont-txtP>p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+/*special e*/
+
+/*ideal s*/
+.ideal {
+    background: #f4f4f4;
+}
+.ideal__rightImgWrap {
+    padding-top: 80px;
+}
+.ideal__rightImg {
+    width: 100%;
+    height: auto;
+}
+.ideal__rightImg-act {
+    animation: fadeInDownTxt 2s 1;
+    -webkit-animation: fadeInDownTxt 2s 1;
+}
+.ideal__leftTxt {
+    text-align: left;
+}
+.ideal__leftTxt .h1 {
+    color: #484848;
+    font-size: 1.5em;
+}
+.ideal__leftTxt .h4 {
+    line-height: 150%;
+}
+/*ideal e*/
+
+/*good s*/
+.good .h1 {
+    font-size: 2em;
+    color: #000;
+}
+.good .row {
+    margin-top: 30px;
+}
+.good .row>li {
+    cursor: pointer;
+}
+/*图标包裹圆圈*/
+.icon__wrap {
+    position: relative;
+    height: 124px;
+    width: 124px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: url(../imgs/content/li_icons.png) no-repeat;
+}
+.icon__redWrap {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 0 0 0 20px transparent;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+}
+.good__topRow>li:nth-child(1)>.icon__wrap {
+    background-position: 0 0;
+}
+.good__topRow>li:nth-child(2)>.icon__wrap {
+    background-position: -348px 0;
+}
+.good__topRow>li:nth-child(3)>.icon__wrap {
+    background-position: -692px 0;
+}
+.good__topRow>li:nth-child(4)>.icon__wrap {
+    background-position: -1041px 0;
+}
+.good__bottomRow>li:nth-child(1)>.icon__wrap {
+    background-position: 0 -250px;
+}
+.good__bottomRow>li:nth-child(2)>.icon__wrap {
+    background-position: -348px -250px;
+}
+.good__bottomRow>li:nth-child(3)>.icon__wrap {
+    background-position: -692px -250px;
+}
+.good__bottomRow>li:nth-child(4)>.icon__wrap {
+    background-position: -1041px -250px;
+}
+
+/*优点介绍在鼠标经过时的圆角图标css3效果*/
+.good__topRow>li:nth-child(1):hover>.icon__wrap{
+    background-position: 0 -124px;
+}
+.good__topRow>li:nth-child(2):hover>.icon__wrap{
+    background-position: -348px -124px;
+}
+.good__topRow>li:nth-child(3):hover>.icon__wrap{
+    background-position: -692px -124px;
+}
+.good__topRow>li:nth-child(4):hover>.icon__wrap{
+    background-position: -1041px -124px;
+}
+.good__bottomRow>li:nth-child(1):hover>.icon__wrap {
+    background-position: 0 -374px;
+}
+.good__bottomRow>li:nth-child(2):hover>.icon__wrap {
+    background-position: -348px -374px;
+}
+.good__bottomRow>li:nth-child(3):hover>.icon__wrap {
+    background-position: -692px -374px;
+}
+.good__bottomRow>li:nth-child(4):hover>.icon__wrap {
+    background-position: -1041px -374px;
+}
+.good .row>li:hover .good__txt{
+    color: #e2373d;
+}
+.good .row>li:hover .icon__redWrap{
+    box-shadow: 0 0 0 0 #ee4243;
+    -webkit-transition: box-shadow .3s ease-in-out;
+}
+/*图标*/
+.good .row>li:hover .icon{
+    background: url(../imgs/content/icon_list2.png) no-repeat;
+}
+.good .row>li:hover .weChat{
+    background-position: -370px 0;
+}
+.good .row>li:hover .app{
+    background-position: -732px 0;
+}
+.good .row>li:hover .seo {
+    background-position: -1064px 0;
+}
+/*图标1*/
+
+
+/*避免出现横向滚动条*/
+.good .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+/*优点介绍的文字*/
+.good__txt {
+    padding: 20px;
+    color: #7c7c7c;
+}
+.good__txt>h2 {
+    margin-top: 22px;
+    margin-bottom: 11px;
+    font-size: 1.4em;
+}
+.good__txt>p {
+    font-size: 1em;
+    transition: all .5s ease-in-out;
+    -webkit-transform: scale(.5);
+}
+/*about的优点介绍文字放大*/
+.zoomTxt{
+    -webkit-transform: scale(1)!important;
+}
+@media screen and (max-width: 767px) {
+    .good .row>li {
+        margin-top: 20px;
+    }
+}
+/*good e*/
+
+/*client s*/
+.client {
+    background: #f3f3f3;
+}
+.client>h1 {
+    color: #484848;
+    font-size: 2em;
+}
+.client .h4 {
+    margin-bottom: 70px;
+}
+/*比例图*/
+.client__grib-wrap>ul>li>img {
+    position: absolute;
+    bottom: -12px;
+}
+.client__grib-wrap {
+    position: relative;
+    bottom: 0;
+}
+.client__grib {
+    overflow: auto;
+    width: 100%;
+}
+.client dl.client__grib>dd:first-child {
+    position: relative;
+    width: 10%;
+}
+.client__grib>dd>i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 13px;
+    width: 21px;
+    background: url(../imgs/content/spot1.png) no-repeat;
+}
+/*表格*/
+.client__grib dd {
+    float: left;
+    width: 18%;
+    height: 40px;
+    line-height: 35px;
+    font-size: 1.2em;
+}
+.client__grib>dd:nth-child(2) {
+    border-left: 1px solid #cdcdcd;
+}
+.client__grib-wrap .client__grib:last-child>dd:not(:first-child) {
+    border-bottom: 1px solid #cdcdcd;
+}
+.client__grib>dd:not(:first-child) {
+    border-top: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+}
+/*5类型的比例图*/
+.client__grib-img-zf {
+    left: 16%;
+}
+.client__grib-img-ss {
+    left: 34%;
+}
+.client__grib-img-jt {
+    left: 52%;
+}
+.client__grib-img-pp {
+    left: 70%;
+}
+.client__grib-img-qy {
+    left: 88%;
+}
+.client__grib-img-act {
+    animation: fadeInGrow 1s 1;
+    -webkit-animation: fadeInGrow 1s 1;
+}
+.client__persent{
+    margin-top: 50px;
+}
+.client__persent>li>span {
+    display: inline-block;
+    padding: 2px 5px;
+    color: #fff;
+}
+.client__persent>li:nth-child(1)>span {
+    background: #0eb19e;
+}
+.client__persent>li:nth-child(2)>span {
+    background: #f0453b;
+}.client__persent>li:nth-child(3)>span {
+    background: #d9d5b0;
+}.client__persent>li:nth-child(4)>span {
+    background: #249ad7;
+}.client__persent>li:nth-child(5)>span {
+    background: #69a72e;
+}
+ /*文字说明*/
+.client__grib-img>li:nth-child(1)>.client__grib-imgTxt {
+    top: 30%;
+    left: 10%;
+}
+.client__grib-img>li:nth-child(2)>.client__grib-imgTxt{
+    left: 28%;
+}
+.client__grib-img>li:nth-child(3)>.client__grib-imgTxt{
+    top: -45px;
+    left: 46%;
+}
+.client__grib-img>li:nth-child(4)>.client__grib-imgTxt{
+    top: 10%;
+    left: 64%;
+}
+.client__grib-img>li:nth-child(5)>.client__grib-imgTxt{
+    top: 10%;
+    left: 82%;
+}
+.client__grib-img>li {
+    cursor: pointer;
+}
+.client__grib-img>li:hover .client__grib-imgTxt{
+    animation: zoomIn .6s forwards;
+    -webkit-animation: zoomIn .6s forwards;
+}
+.client__grib-imgTxt {
+    position: absolute;
+    width: 180px;
+    padding: 10px;
+    background: #fff;
+    text-align: left;
+    z-index: 3;
+    opacity: 0;
+}
+.client__grib-imgTxt::after{
+    position: absolute;
+    left: 0;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 0;
+    border-top: 40px solid #fff;
+    border-left: 18px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+/*名称*/
+.client__grib-imgTxtNm {
+    font-size: 1.2em;
+}
+/*小点*/
+.client__grib-imgTxtPoint {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+    background: #e2373d;
+}
+/*比例*/
+.client__grib-img-persent {
+    font-size: 2em;
+    color: #e2373d;
+}
+/*client e*/

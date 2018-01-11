@@ -1,0 +1,272 @@
+@charset "utf-8";
+/*banner s*/
+.service__banner {
+    position: relative;
+    background: url(../imgs/banner/service_banner.jpg) no-repeat;
+    background-size: cover;
+}
+.service__banner-txt {
+    position: absolute;
+    bottom: 100px;
+}
+@media screen and (min-width: 535px){
+    .service__banner-txt {
+        left: 8.3333%
+    }
+}
+/*banner e*/
+
+/*文字，不可否认... s*/
+.service__Txt {
+    width: 100%;
+    padding: 50px 0;
+    background: #fff;
+}
+.service__Txt>p {
+    font-size: 1.4em;
+    line-height: 200%;
+}
+.service__Txt>p>.lead {
+    font-size: 1.8em;
+    color: #e2373d;
+}
+/*文字，不可否认... e*/
+
+
+/*business s*/
+section.business {
+    width: 100%;
+    padding: 3em 0;
+    text-align: center;
+    font-size: 16px;
+    background: url(../imgs/content/service_img.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+section.business>h1 {
+    color: #fff;
+}
+section.business>h4 {
+    color: #fff;
+}
+/*业务介绍正文*/
+.business__cont {
+    padding-top: 20px;
+}
+/*图标包裹圆圈*/
+.icon__wrap {
+    position: relative;
+    height: 220px;
+    width: 200px;
+    margin: 0 auto;
+    background: transparent url(../imgs/content/icon_bak.png) no-repeat center;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+/*业务介绍在鼠标经过时的背景色变红效果*/
+.business__cont>li:hover .icon__wrap{
+    background: url(../imgs/content/icon_bak_on.png) no-repeat center;
+}
+.business__cont>li:hover .business__txt>h2{
+    color: #e2373d;
+}
+
+/*图标*/
+.icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 79px;
+    background: url(../imgs/content/icon_list1.png) no-repeat;
+    z-index: 3;
+}
+.business__cont>li:hover .icon{
+    background: url(../imgs/content/icon_list2.png) no-repeat;
+}
+.business__cont>li:hover .weChat{
+    background-position: -370px 0;
+}
+.business__cont>li:hover .app{
+    background-position: -732px 0;
+}
+.business__cont>li:hover .seo {
+    background-position: -1064px 0;
+}
+/*图标1*/
+.icon__wrap>.webPage {
+    width: 80px;
+    background-position: 0 0;
+}
+/*图标2-4*/
+.icon__wrap>.weChat {
+    width: 68px;
+    background-position: -370px 0;
+}
+.icon__wrap>.app {
+    width: 54px;
+    background-position: -732px 0;
+}
+.icon__wrap>.seo {
+    width: 104px;
+    background-position: -1064px 0;
+}
+
+/*避免出现横向滚动条*/
+.business .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+/*业务介绍的文字*/
+.business__txt {
+    padding: 20px;
+    color: #fff;
+}
+.business__txt>h2 {
+    margin-top: 22px;
+    margin-bottom: 11px;
+    font-size: 1.4em;
+}
+.business__txt>p {
+    font-size: 1em;
+    transition: all .5s ease-in-out;
+    -webkit-transform: scale(.5);
+}
+/*index的business文字放大*/
+.zoomTxt{
+    -webkit-transform: scale(1)!important;
+}
+@media screen and (max-width: 767px) {
+    .business__cont>li {
+        margin-top: 20px;
+    }
+}
+/*business e*/
+
+/*help s*/
+.help__title {
+    color: #000;
+}
+.help__txt {
+    line-height: 150%;
+    margin-bottom: 60px;
+}
+.help__leftImg {
+    height: 400px;
+    padding: 80px 50px;
+}
+.leftImg-act {
+    animation: fadeInLeft 2s 1;
+    -webkit-animation: fadeInLeft 2s 1; /* Safari 和 Chrome */
+}
+@media screen and (min-width: 767px){
+    .help{
+        overflow: hidden;
+    }
+    .help__leftImg {
+        background: url(../imgs/content/help_list.png) no-repeat center;
+        background-size: contain;
+    }
+    .help__list {
+        position: relative;
+        left: 220px;
+    }
+    .help__list>ul>li {
+        box-sizing: content-box;
+        padding: 10px 0;
+    }
+    .help__list>ul>li:nth-child(2) {
+        padding-left: 60px;
+    }
+    .help__list>ul>li:nth-child(3) {
+        padding-left: 60px;
+    }
+    .help__list>ul>li:nth-child(4) {
+        padding-left: 120px;
+    }
+    .help__list>ul>li:nth-child(5) {
+        padding-left: 40px;
+    }
+    .help__list>ul>li>p {
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 767px){
+    .help__list>ul>li>em {
+        display: block;
+    }
+    .help__list>ul>li>p {
+        display: block;
+    }
+}
+/*数字*/
+.help__list>ul>li>em {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../imgs/content/spot.png) no-repeat;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+/*help e*/
+
+/*market s*/
+.market {
+    background: url(../imgs/content/service_sec4_bak.jpg) no-repeat;
+    background-size: cover;
+}
+.market__imgLeft {
+    float: left;
+}
+.market__imgLeft>img {
+}
+.market__txtRight>.h4 {
+    line-height: 150%;
+}
+.market__txtRight>h1>span {
+    font-size: 2em;
+    color: #e2373d;
+}
+.market__txtRight>h1>span:nth-child(1) {
+    font-size: 1.5em;
+}
+/*market e*/
+
+/*save s*/
+.save__bottomCont {
+    margin-top: 50px;
+}
+/*图片*/
+.save__bottomCont-imgl-act {
+    animation: fadeInTop 2s 1;
+    -webkit-animation: fadeInTop 2s 1;
+}
+.save__bottomCont-imgl {
+    width: 100%;
+    height: auto;
+}
+.save__bottomCont-r>.h1 {
+    line-height: 200%;
+}
+.save__bottomCont-r>.h1>span {
+    font-size: 1.5em;
+    color: #e00012;
+}
+/*点击更多*/
+.save__bottomCont-r-more {
+    display: inline-block;
+    padding: 10px 50px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #000;
+    transition: all .5s;
+}
+.save__bottomCont-r-more:hover {
+    background: #e00012;
+    color: #fff;
+}
+/*save e*/

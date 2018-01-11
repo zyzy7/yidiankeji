@@ -1,0 +1,314 @@
+@charset "utf-8";
+body,button, input, select, textarea {
+    font-size: 14px;
+    color:#828282 ;
+    font-family: "微软雅黑","宋体","Arail";
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ul, ol, pre, fieldset
+, button, input, textarea, th, td,video,source{
+    margin: 0;
+    padding: 0;
+}
+button, input, select, textarea {
+    outline: none;
+    border: none;
+}
+img {
+    border: none;
+}
+li {
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+}
+.clear::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+/*导航条 s*/
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.navbar {
+    border: none;
+}
+.navbar-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/*导航条居中设置*/
+@media (min-width: 768px) {
+    .container {
+        padding-left: 4%;
+        padding-right: 4%
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        position:relative;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/*logo 导航条的左边*/
+.navbar-brand>a.logo{
+    display: block;
+    height: 62px;
+    width: 181px;
+    background: url(../imgs/header/logo.png) no-repeat center;
+    background-size: 181px 62px;
+}
+/*调整小屏时logo的位置*/
+@media screen and (max-width: 767px){
+    .navbar-brand>a.logo{
+        display: block;
+        height: 40px;
+        width: 120px;
+        background: url(../imgs/header/logo.png) no-repeat center;
+        background-size: 120px 40px;
+    }
+    .navbar-header>div.navbar-brand {
+        padding: 6px 15px;
+    }
+}
+
+/*右边菜单字体颜色以及动画渐变*/
+.pull-right>ul.nav__menu>li {
+    line-height: 80px;
+    margin-right: 35px;
+    padding: 0 5px;
+}
+.nav__menu>li>a {
+    color: #bfbfbf;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+.nav__menu>li>a:hover {
+    color: #fff;
+}
+.nav__menu>li>a.active {
+    color: #fff;
+}
+/*菜单的横线*/
+.nav__menu-sub {
+    display: block;
+    width: 0;
+    height: 2px;
+    margin: 0 auto;
+    bottom: 25px;
+    background: transparent;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+/*鼠标划过某菜单项，背景颜色变化*/
+.nav__menu>li:hover>sub {
+    width: 100%;
+    background: #fff;
+}
+.nav__menu>li>.active+sub {
+    width: 100%;
+    background: #fff;
+}
+/*响应式导航条菜单*/
+@media screen and (max-width: 767px){
+    /*小屏幕的下拉三道杠*/
+    div.nav__menu-s>div {
+        width: 35px;
+        height: 25px;
+        margin-top: 15px;
+        margin-left: 0;
+        border-top: 15px double;
+        border-bottom: 5px solid;
+        border-radius: 2px;
+        color: #838286;
+        cursor: pointer;
+    }
+    /*小屏幕时展开的菜单包裹*/
+    .nav__menu-wrap {
+        position: relative;
+        width: 120%;
+        right: -10%;
+    }
+    /*点击展开的菜单列表*/
+    .nav__menu {
+        display: none;
+        position: relative;
+        background: #eaeaea;
+        text-align: center;
+    }
+    .nav__menu>li>a {
+        padding-left: 20px;
+    }
+    /*展开的菜单的项*/
+    .pull-right>ul.nav__menu>li {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+        background: #eee;
+        line-height: 50px;
+    }
+    /*下划线隐藏*/
+    .nav__menu-sub {
+        display: none;
+    }
+}
+/*导航条 e*/
+
+/*banner s*/
+.banner {
+    position: relative;
+}
+/*大于980px*/
+@media screen and (min-width: 980px) {
+    .banner {
+        width: 100%;
+        height: 600px;
+    }
+}
+/*大于768px小于980px*/
+@media screen and (min-width: 768px) and (max-width: 980px) {
+    .banner {
+        width: 100%;
+        height: 488px;
+    }
+
+}
+/*小于768px*/
+@media screen and (max-width: 768px){
+    .banner {
+        height: 400px;
+    }
+}
+/*banner e*/
+
+
+/*section的公共样式 s*/
+section.section {
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+}
+.h1 {
+    margin-bottom: 20px;
+    font-size: 1.9em;
+}
+.h4 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+/*section的公共样式 e*/
+
+/*partner s*/
+section.partner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    background: #f8f8f8;
+    cursor: move;
+}
+.swiper-slide>img {
+    vertical-align: middle;
+}
+.swiper-slide {
+    /*width: 124px;*/
+    text-align: center;
+}
+
+/*partner e*/
+
+/*footer s*/
+footer {
+    width: 100%;
+    padding-top: 30px;
+    background: #262626;
+    color: #707070;
+}
+.footer__content {
+    padding-bottom: 50px;
+}
+/*足部地址和电话*/
+.footer__content>div {
+    vertical-align: top;
+}
+.footer__address,.footer__phone {
+    padding: 20px 0;
+}
+/*足部友情链接和更多信息*/
+.footer__frLinks {
+    padding-bottom: 20px;
+}
+.footer__frLinks>dt,.footer__moreInfo>dt {
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.footer__frLinks>dd>a,.footer__moreInfo>dd>a {
+    color: #707070;
+}
+.footer__frLinks>dd,.footer__moreInfo>dd {
+    padding: 10px 0;
+}
+.footer__moreInfo {
+    padding-bottom: 30px;
+}
+.footer__qqConsult>p {
+    padding: 10px 0;
+}
+/*二维码*/
+.footer__code {
+    padding-top: 50px;
+}
+/*二维码图片抖动效果*/
+.footer__code>img{
+    cursor: pointer;
+}
+.footer__code>img:hover {
+    animation: codeShake .5s 1 0s;
+    -webkit-animation-name: codeShake; /*动画名称*/
+    -webkit-animation-duration: .5s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+/*其他联系方式*/
+.footer__code-other {
+    padding: 25px 0;
+}
+.footer__code-other>li {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    background: url(../imgs/footer/icons.png) no-repeat;
+    cursor: pointer;
+}
+.footer__code-other>li:nth-child(1) {
+    background-position: 0 0;
+}
+.footer__code-other>li:nth-child(2) {
+    background-position: -53px 0;
+}
+.footer__code-other>li:nth-child(3) {
+    background-position: -104px 0;
+}
+/*版权信息*/
+.footer__rightInfo {
+    width: 100%;
+    padding: 20px 0;
+    background: #0b0b0b;
+    color: #404040;
+}
+/*footer e*/

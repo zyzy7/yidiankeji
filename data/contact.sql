@@ -1,0 +1,11 @@
+SET NAMES 'utf8';
+DROP DATABASE IF EXISTS contact;
+CREATE DATABASE contact CHARSET=UTF8;
+USE contact;
+CREATE TABLE users(
+    uid INT PRIMARY KEY AUTO_INCREMENT,
+    uname VARCHAR(32),
+    company VARCHAR(32),
+    phone VARCHAR(11),
+    message VARCHAR(300)
+);

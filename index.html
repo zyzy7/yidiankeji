@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>仿站</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/keyframes.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--通用导航条-->
+<nav class="navbar fixed">
+   <div class="navbar-header container">
+       <div class="navbar-brand">
+           <a href="index.html" class="logo"></a>
+       </div>
+       <!--导航navbar-brand e-->
+       <!--小屏幕的三道杠 s-->
+       <div class="pull-right nav__menu-s">
+           <div></div>
+       </div>
+       <!--小屏幕的三道杠 e-->
+       <!--右边菜单-->
+       <div class="pull-right nav__menu-wrap">
+           <ul class="navbar-nav nav__menu row">
+               <li>
+                   <a href="index.html" class="active">首页</a>
+                   <sub class="nav__menu-sub"></sub>
+               </li>
+               <li>
+                   <a href="service.html">服务</a>
+                   <sub class="nav__menu-sub"></sub>
+               </li>
+               <li>
+                   <a href="web-case.html">网站案例</a>
+                   <sub class="nav__menu-sub"></sub>
+               </li>
+               <li>
+                   <a href="wechat-case.html">微端案例</a>
+                   <sub class="nav__menu-sub"></sub>
+               </li>
+               <li>
+                   <a href="about.html">关于</a>
+                   <sub class="nav__menu-sub"></sub>
+               </li>
+               <li>
+                   <a href="contact.html">联系</a>
+                   <sub class="nav__menu-sub"></sub>
+               </li>
+           </ul>
+       </div>
+   </div>
+</nav>
+<!--通用导航条-->
+
+<!--banner s-->
+<div id="banner" class="carousel slide banner">
+    <!-- 5个小圆点 -->
+    <ol class="carousel-indicators">
+        <li data-target="#banner" data-slide-to="0" class="active"></li>
+        <li data-target="#banner" data-slide-to="1"></li>
+        <li data-target="#banner" data-slide-to="2"></li>
+        <li data-target="#banner" data-slide-to="3"></li>
+        <li data-target="#banner" data-slide-to="4"></li>
+    </ol>
+    <!-- 轮播滚动内容部分 s-->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="carousel-caption">
+                <p class="txt-title">
+                    <img src="./imgs/banner/txt5.png" alt="营销思维"  class="img-responsive"/>
+                </p>
+                <p class="txt-cont">设计不仅仅是表面上的视觉呈现，更是深层次的品牌与消费者之间的沟通，用心设计，用图说话；我们基于原则去实践，用责任心和远见塑造未来</p>
+                <a href="#" class="more" data-cont="了解更多">了解更多</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+                <p class="txt-title">
+                    <img src="./imgs/banner/txt1.png" alt="营销思维" class="img-responsive"/>
+                </p>
+                <p class="txt-cont">技术作为网站设计的最基础环节，我们需要时刻保持内容的革新，无论何时，都必须让我们的客户获得最前沿的技术支持，辅助客户品牌以呈现给消费者完美的用户体验</p>
+                <a href="#" class="more" data-cont="了解更多">了解更多</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+                <p class="txt-title">
+                    <img src="./imgs/banner/txt2.png" alt="营销思维" class="img-responsive"/>
+                </p>
+                <p class="txt-cont">我们对每一位团队成员精挑细选，我们要求每一位成员都做自己思想的主人，要有思想的做事，我们努力打造一支学习型的团队，因为我们深知：视觉更广 眼界更宽 服务才更出色</p>
+                <a href="#" class="more" data-cont="了解更多">了解更多</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+                <p class="txt-title">
+                    <img src="./imgs/banner/txt3.png" alt="营销思维" class="img-responsive"/>
+                </p>
+                <p class="txt-cont">整个建站过程充分考虑SEO优化需要，同时结合最贴切的H5交互效果，让网站在搜索引擎上拥有更多的展现机会，让消费者在更愉悦的用户体验中对品牌产生价值认同，做真正有用的网站</p>
+                <a href="#" class="more" data-cont="了解更多">了解更多</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+                <p class="txt-title">
+                    <img src="./imgs/banner/txt4.png" alt="营销思维" class="img-responsive"/>
+                </p>
+                <p class="txt-cont">虽然我们服务的基本都是高端客户，或者说我们有能力帮助一个新晋品牌走向高端，但您却不必担心我们收费过高，因为我们知道：实惠才是市场的本质，我们一直坚持以5%的利润率服务</p>
+                <a href="#" class="more" data-cont="了解更多">了解更多</a>
+            </div>
+        </div>
+        <!--轮播滚动内容部分 e-->
+    </div>
+</div>
+<!--banner e-->
+
+<!--多方面介绍-->
+<article>
+    <!--business s-->
+    <section class="container business section">
+        <h1 class="h1">易点，不止是一家网站建设公司</h1>
+        <h4 class="h4">我们信仰并一直坚持，为客户打造真正有价值的互联网平台</h4>
+        <ul class="row business__cont">
+            <li class="col-md-3 col-xs-12 col-sm-6">
+                <a href="javascript:void(0)">
+                    <div class="icon__wrap">
+                        <div class="icon__redWrap"></div>
+                        <div class="icon webPage"></div>
+                    </div>
+                    <div class="business__txt">
+                        <h2>高端响应式网站</h2>
+                        <p>通过良好的创意设计与响应式技术、再配以酷炫互动效果，以让您企业得以最小成本完成品牌传播</p>
+                    </div>
+                </a>
+            </li>
+            <li class="col-md-3 col-xs-12 col-sm-6">
+                <a href="javascript:void(0)">
+                    <div class="icon__wrap">
+                        <div class="icon__redWrap"></div>
+                        <div class="icon weChat"></div>
+                    </div>
+                    <div class="business__txt">
+                        <h2>微端应用开发</h2>
+                        <p>
+                            无需安装、直接访问；移动互联网时代，易点H5手机端应用无疑是您企业展示
+                            形象的最佳选择
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="col-md-3 col-xs-12 col-sm-6">
+                <a href="javascript:void(0)">
+                    <div class="icon__wrap">
+                        <div class="icon__redWrap"></div>
+                        <div class="icon app"></div>
+                    </div>
+                    <div class="business__txt">
+                        <h2>APP/小程序开发</h2>
+                        <p>
+                            基于IOS和Android系统的移动APP应用定制开发，让您永远比竞争对手
+                            抢先一步占据市场制高点
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="col-md-3 col-xs-12 col-sm-6">
+                <a href="javascript:void(0)">
+                    <div class="icon__wrap">
+                        <div class="icon__redWrap"></div>
+                        <div class="icon seo"></div>
+                    </div>
+                    <div class="business__txt">
+                        <h2>SEO优化</h2>
+                        <p>
+                            在整个网站设计的过程中，充分考虑SEO优化的需要，
+                            让您的网站比同行拥有更多的展现机会
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!--business e-->
+    <!--dataShow s-->
+    <section class="container dataShow section">
+        <h1 class="h1">8年时间 120位同事 3000个日夜</h1>
+        <p class="dataShow__txt h4">我们只致于力做好一件事：给客户提供基于互联网技术的数字化解决方案，
+            虽然它包括 视觉设计、用户行为研究、交互效果、技术服务以及基于移动端和传统平台的营销支持</p>
+        <a href="#" data-cont="CONTACT" class="dataShow__contact">
+            <span>CONTACT</span>
+        </a>
+        <div class="row dataShow__data">
+            <div class="col-xs-12">
+                <span class="num num1">0</span>
+                <!--<span class="num">561</span>-->
+                <p>位客户信赖之选</p>
+            </div>
+            <div class="col-xs-12">
+                <span class="num num2">0</span>
+                <!--<span class="num">69</span>-->
+                <p>家知名企业的支持</p>
+            </div>
+            <div class="col-xs-12">
+                <span class="num num3">0</span>
+                <!--<span class="num">2013</span>-->
+                <p>年度金牌设计企业</p>
+            </div>
+            <div class="col-xs-12">
+                <span class="num">0</span><span class="num num4">0</span>
+                <!--<span class="num">09</span>-->
+                <p>年时间的专注</p>
+            </div>
+            <div class="col-xs-12">
+                <span class="num num5">0</span><span>%</span>
+                <!--<span class="num">97%</span>-->
+                <p>以上的客户续费率</p>
+            </div>
+        </div>
+    </section>
+    <!--dataShow e-->
+
+    <!--案例展示 s-->
+    <section class="container caseShow section">
+        <h1 class="h1">每个作品，都是一次思维与灵魂的碰撞</h1>
+        <p class="caseShow__txt h4">一直向着“做一流的互联网设计团队”这一愿景努力，
+            致力于不断提升对网站建设，微信公众号/小程序开发，app等全线产品的用户体验。</p>
+        <ul class="case__list">
+            <li class="col-md-4 col-sm-6">
+                <a class="case__imgWrap" href="https://hisense.co.uk/">
+                    <img class="img-responsive" src="imgs/content/case1.jpg" alt=""/>
+                    <div class="glass__wrap">
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="case__description">
+                    <span class="pull-left">海信海外站</span>
+                    <span class="pull-right">类别：H5响应式官网</span>
+                </div>
+            </li>
+            <li class="col-md-4 col-sm-6">
+                <a class="case__imgWrap" href="https://hisense.co.uk/">
+                    <img class="img-responsive" src="imgs/content/case1.jpg" alt=""/>
+                    <div class="glass__wrap">
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="case__description">
+                    <span class="pull-left">海信海外站</span>
+                    <span class="pull-right">类别：H5响应式官网</span>
+                </div>
+            </li>
+            <li class="col-md-4 col-sm-6">
+                <a class="case__imgWrap" href="https://hisense.co.uk/">
+                    <img class="img-responsive" src="imgs/content/case1.jpg" alt=""/>
+                    <div class="glass__wrap">
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="case__description">
+                    <span class="pull-left">海信海外站</span>
+                    <span class="pull-right">类别：H5响应式官网</span>
+                </div>
+            </li>
+            <li class="col-md-4 col-sm-6">
+                <a class="case__imgWrap" href="https://hisense.co.uk/">
+                    <img class="img-responsive" src="imgs/content/case2.jpg" alt=""/>
+                    <div class="glass__wrap">
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="case__description">
+                    <span class="pull-left">海信海外站</span>
+                    <span class="pull-right">类别：H5响应式官网</span>
+                </div>
+            </li>
+            <li class="col-md-4 col-sm-6">
+                <a class="case__imgWrap" href="https://hisense.co.uk/">
+                    <img class="img-responsive" src="imgs/content/case2.jpg" alt=""/>
+                    <div class="glass__wrap">
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="case__description">
+                    <span class="pull-left">海信海外站</span>
+                    <span class="pull-right">类别：H5响应式官网</span>
+                </div>
+            </li>
+            <li class="col-md-4 col-sm-6">
+                <a class="case__imgWrap" href="https://hisense.co.uk/">
+                    <img class="img-responsive" src="imgs/content/case2.jpg" alt=""/>
+                    <div class="glass__wrap">
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="glass clear">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="case__description">
+                    <span class="pull-left">海信海外站</span>
+                    <span class="pull-right">类别：H5响应式官网</span>
+                </div>
+            </li>
+        </ul>
+        <!--加载更多-->
+        <a class="case__more-wrap" href="web-case.html">
+            <div class="case__more">
+                <div class="point case__more-point1"></div>
+                <div class="point case__more-point2"></div>
+                <div class="point case__more-point3"></div>
+            </div>
+        </a>
+    </section>
+    <!--案例展示 e-->
+    <!--携手 s-->
+    <section class="container section together">
+        <h1 class="h1">让我们携手创造价值</h1>
+        <!--轮播切换文字-->
+        <div id="carousel__txt" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="carousel-caption">
+                        <p>在与合作伙伴合作的过程中，我们着重为他们创造看得见的价值，
+                            而我们自己的价值不仅仅在于执行层面，更重要的是我们可以站在客户的身边，共同进退
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-caption">
+                        <p>对于信任我们的客户，我想说的是：这不仅仅是生意上的关系，而是共同成长的过程；
+                            合作带来的远远不止是利润，更多的是经验上的积累和更广阔的发展空间，而这些，才是无价的财富
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="carousel__arrow">
+                <div class="btn carousel__txt-left"></div>
+                <div class="btn carousel__txt-right"></div>
+            </div>
+        </div>
+    </section>
+    <!--携手 e-->
+    <!--friendsLinks s-->
+    <section class="partner">
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide col-xs-6">
+                        <img src="./imgs/content/client1.jpg" alt="1"/>
+                    </div>
+                    <div class="swiper-slide col-xs-6">
+                        <img src="./imgs/content/client2.jpg" alt="1"/>
+                    </div>
+                    <div class="swiper-slide col-xs-6">
+                        <img src="./imgs/content/client5.jpg" alt="1"/>
+                    </div>
+                    <div class="swiper-slide col-xs-6">
+                        <img src="./imgs/content/client3.jpg" alt="1"/>
+                    </div>
+                    <div class="swiper-slide col-xs-6">
+                        <img src="./imgs/content/client4.jpg" alt="1"/>
+                    </div>
+                    <div class="swiper-slide col-xs-6">
+                        <img src="./imgs/content/client5.jpg" alt="1"/>
+                    </div>
+                    <div class="swiper-slide col-xs-6">
+                        <img src="./imgs/content/client6.jpg" alt="1"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--friendsLinks e-->
+</article>
+
+<!--足部 s-->
+<footer>
+    <div class="container">
+        <div class="row footer__content">
+            <div class="col-md-4">
+                <div>
+                    <img src="./imgs/footer/footer_logo.png" alt="logo"/>
+                </div>
+                <p class="footer__address">
+                    广州天河区黄埔大道西495号嘉冠国际大厦10楼
+                </p>
+                <p class="footer__phone">
+                    Tel-A：400-886-9266<br>
+                    Tel-B：(020) 85276913<br>
+                    Tel-C：(020) 8527 6923<br>
+                </p>
+                <p>
+                    E-Mail：sale@eidea.net.cn
+                </p>
+            </div>
+            <div class="col-md-2">
+                <dl class="footer__frLinks">
+                    <dt>友情链接</dt>
+                    <dd><a href="#">免费网站申请</a></dd>
+                    <dd><a href="#">深圳网站建设</a></dd>
+                    <dd><a href="#">深圳网站设计</a></dd>
+                    <dd><a href="#">广州网站建设</a></dd>
+                    <dd><a href="#">上海网站设计</a></dd>
+                    <dd><a href="#">响应式网站设计</a></dd>
+                    <dd><a href="#">网站建设公司</a></dd>
+                </dl>
+            </div>
+            <div class="col-md-3">
+                <dl class="footer__moreInfo">
+                    <dt>更多可以了解的信息</dt>
+                    <dd><a href="#">法律公告</a></dd>
+                    <dd><a href="#">保护您的隐私</a></dd>
+                    <dd><a href="#">加入我们</a></dd>
+                </dl>
+                <div class="footer__qqConsult">
+                    <p>售前QQ咨询</p>
+                    <a href="#">
+                        <img src="./imgs/footer/qq_consult.png" alt=""/>
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/footer/qq_consult.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 footer__code">
+                <img src="./imgs/footer/code_icon.png" alt=""/>
+                <ul class="footer__code-other">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__rightInfo text-center">
+        <span>广州一点网络科技有限公司</span>
+        <span>　　粤ICP备10079903号-3</span>
+    </div>
+</footer>
+<!--足部 e-->
+</body>
+<script src="./js/jquery-3.2.1.js"></script>
+<script src="./js/transitions.js"></script>
+<script src="./js/carousel.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    //index的轮播的设置
+    $('#banner').carousel({
+        interval: 3000,
+        pause: null
+    });
+//    携手部分的文字轮播
+    var $carTxt = $("#carousel__txt");
+    $carTxt.carousel({
+        interval: 6000,
+        pause: null
+    });
+
+//    计算窗口大小确定显示友情链接的个数
+    var x = 7;
+    $wind = $(window);
+    var wid = $wind.width();
+    if(wid<767) {
+        x = 2;
+    }
+    else {
+        x = 7;
+    }
+
+//    友情链接的slides
+    var swiper1 = new Swiper('.swiper-container', {
+        slidesPerView: x,
+        spaceWrap: 50,
+        autoplay: true,//可选选项，自动滑动
+        loop: true
+    });
+
+//    var data = $carTxt.data("bs.carousel");
+//    if(data instanceof Carousel) {
+//        data.carousel(0);
+//        data.carousel("next");
+//    }
+//    $(".carousel__txt-left").carousel('prev');
+//    $(".carousel__txt-right").carousel('next');
+</script>
+</html>
